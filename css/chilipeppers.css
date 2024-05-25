@@ -1,0 +1,342 @@
+body {
+    margin: 0;
+    padding: 0%;
+    background-color: #EDE1D7;
+    overflow-x: hidden;
+}
+
+#pantallas{
+    display: flex;
+}
+
+.encabezadoiz {
+    background-color:#EDE1D7 ;
+    height: 2   ;
+    width: 40%;
+}
+.encabezadodere {
+    background-color: #EDE1D7;
+    height: 200px;
+    width: 60%;
+}
+
+.contenidonav {
+    margin-top: 70px;
+}
+
+
+
+.bodyiz{
+    background-color: #EDE1D7;
+    width: 35%;
+    height: 600px;
+}
+.bodydere{
+    background-color: #EDE1D7;
+    width: 65%;
+    height: 600px;
+    display: flex;
+}
+
+#bodys {
+    display: flex;
+}
+
+.cuadroiz {
+    border: solid #D96B2B;
+    box-shadow: 0px 0px 20px #D96B2B    ;
+    border-radius: 24px;
+    margin: auto;
+    width: 50%;
+    height: 340px;
+    margin-top: 50px;
+}
+
+.imgrestaurante{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.imagenes{
+    display: flex;
+    border: solid #D6B59A;
+    box-shadow: 0px 0px 20px #D6B59A;
+    width: 90%;
+    padding: 20px;
+    padding-left: 5%;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #D6B59A;
+}
+
+.carta{
+    border: solid #D96B2B;
+    box-shadow: 0px 0px 20px #D96B2B    ;
+    border-radius: 24px;
+    width: 30%;
+    height: 550px;
+}
+
+.imgcarta{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.imgcarta:hover{
+    transform: scale(1.6);
+    width: 100%;
+    height: 100%;
+}
+
+.mapa{
+    border: solid #D96B2B;
+    box-shadow: 0px 0px 20px #D96B2B    ;
+    border-radius: 24px;
+    margin: auto;
+    width: 50%;
+    height: 550px;
+    
+}
+
+.direccion {
+    border-radius: 20px;
+}
+
+.btnvolver {
+    position: absolute;
+    padding: 12px;
+    width: 300px;
+    border-radius: 20px;
+    font-size: 30px;
+    background-color: #D96B2B;
+    border-color: #D96B2B;
+    box-shadow: 0px 0px 20px #D96B2B;
+    margin-left: 80px;
+    cursor: pointer;
+    margin-top: 60px;
+   
+}
+.btnreservar {
+    position: absolute;
+    padding: 12px;
+    width: 300px;
+    border-radius: 20px;
+    font-size: 30px;
+    background-color: #D96B2B;
+    border-color: #D96B2B;
+    box-shadow: 0px 0px 20px #D96B2B;
+    margin-left: 1120px;
+    margin-right: 0px;
+    margin-top: 60px;
+    cursor: pointer;
+    
+}
+
+
+.parteinferior {
+    background-color: #EDE1D7;
+    width: 100%;
+    height: 169px;
+    display: flex;
+}
+
+.nombreres{
+    border: solid #D9B18F;
+    width: 30%;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: #D9B18F;
+    margin-bottom: 0px;
+    box-shadow: 0px 0px 20px #96928d;
+}
+
+.pnombre{
+    color: white;
+    font-size: 25px;    
+}
+
+.rating {
+    margin-top: 4px;
+    position: relative;
+    display: flex;
+    padding: 20px 40px;
+    
+    flex-direction: row-reverse;
+    width: 30%;
+    gap: 35px;
+    border-radius: 20px;
+  
+    margin-left: 240px;
+}   
+
+.rating:nth-child(1){
+    transform: translateX(-80px);
+}
+.rating:nth-child(3){
+    transform: translateX(80px);
+}
+
+.rating input {
+    position: relative;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.rating input::before{
+    content: '\f005';
+    position: absolute;
+    font-family: fontAwesome;
+    font-size: 34px;
+    color: white;
+    transition: .5s;
+}
+
+.rating input:hover ~ input::before, .rating input:hover::before,
+.rating input:checked ~ input::before, 
+.rating input:checked::before {
+    color: yellow;
+}
+
+@media (max-width: 768px) {
+   
+
+
+    body {
+        overflow-x: hidden;
+        flex-direction: column;
+        
+    }
+    #pantallas {
+        flex-direction: column; 
+        width: 100%;
+
+    }
+    #bodys {
+        flex-direction: column; 
+        margin-top: 25px;
+        width: 100%;
+        height: 100;
+        margin-left: 85px;
+    }
+    .nombreres{
+
+        width: 225px;
+
+    }
+
+    .encabezadoiz  {
+        position: relative;
+        width: 100%; 
+        margin-top: 0px;
+    }
+    .encabezadodere{
+        position: relative;
+        width: 100%; 
+        margin-top: -85px;
+        left: 80px;
+    }
+    
+    .cuadroiz     {
+     width: 250px; 
+    }
+    .carta{
+     position: absolute;
+     width: 90%;
+     margin-right:0px;
+     height: 25%;
+    }
+    .imgcarta:hover{
+        position: absolute;
+        height: 400px;
+        margin-top: 0%;
+    }
+    .mapa{
+        
+        width: 100%;
+        height: 220px;
+        margin-top: 205px;
+        margin-left: 0px;
+    }
+    .imagenes{
+        position: absolute;
+        width: 275px;
+        margin-left:-44px;
+        margin-top: 55px;
+
+    }
+    .rating{
+     margin-left: 215px;
+    }
+
+    .btnvolver{
+    position: absolute;
+    width: 70%;
+    height: 10%;
+    font-size: 100%;
+    right: 17px;
+    margin-left: -0px;
+      
+    }
+    .btnreservar{
+    position: absolute;
+    left: -1075px;
+    margin-top: 170px;
+    height: 8%;
+    width: 70%;
+    font-size: 100%;
+    }
+    .imgrestaurante{
+
+        width: 250px;
+    }
+    .bodydere{
+
+        width: 125px;
+    }
+
+
+    
+
+}
+@media (max-width: 1920px) {
+    
+    
+    .encabezadoiz {
+        width: 20%; 
+    }
+
+    .encabezadodere {
+        width: 80%; 
+    }
+
+   
+
+    .btnvolver {
+
+      left: 45px;
+        
+
+    }
+    .btnreservar{
+     right: 15px;
+
+    }
+    .rating{
+     left: -15px;
+
+
+    }
+}
+    

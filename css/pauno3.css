@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0%;
+    background-color:#EDE1D7 ;
+    
+}
+
+#pantallas{
+    display: flex;
+}
+
+.encabezadoiz {
+    background-color: #EDE1D7;
+    height: 200px;
+    width: 40%;
+}
+.encabezadodere {
+    background-color: #EDE1D7;
+    height: 200px;
+    width: 60%;
+}
+
+.bodyinferior {
+    background-color: #EDE1D7;
+    height: 769px;
+    width: 100%;
+}
+
+.contenidonav {
+    margin-top: 70px;
+}
+
+.opciones{
+    border: solid #D6B59A;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    background-color: #D6B59A;
+    box-shadow: 0px 0px 20px #D6B59A;
+}
+
+.btn1 {
+    padding: 20px;
+    width: 350px;
+    border-radius: 15px;
+    background-color: #D96B2B;
+    font-size: 25px;
+    color: white;
+    margin: 0px 20px;
+    cursor: pointer;
+    border-color: #D96B2B;
+    box-shadow: 0px 0px 20px #D96B2B;
+}
+
+.contopc{
+    padding: 25px;
+}
+
+.imgcopas {
+    margin-top: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgb(38, 24, 24);
+    width: 50%;
+   
+}
+
+.obne {
+    display: flex;
+    justify-content: center;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px;
+}
+
+.links {
+    background-color: #cd5814ec;
+    width: 320px;
+    border-radius: 0px 0px 15px 15px;
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    display: none;
+    position: absolute;
+    margin-left: 35px;
+    text-align: center;
+}
+
+.links a:hover{
+    background-color: #c3a386;
+    border-radius: 15px;
+}
+
+.desplegable:hover .links {
+    display: block;
+    
+}
+
+@media (max-width: 768px)  {
+    
+    #pantallas {
+        flex-direction: column; 
+    }
+
+    .encabezadoiz, .encabezadodere {
+        width: 100%; 
+    }
+
+    .contopc {
+        text-align: center; 
+    }
+
+    .btn1 {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+
+    .imgcopas {
+        width: 90%; 
+        margin-top: 75px;
+    }
+
+    .obne {
+        flex-direction: column; 
+    }
+
+    .links {
+        width: 86%; 
+        margin: 0; 
+        margin-top: -10px;
+    }
+    .opciones{
+        
+        position: relative;
+        margin-top: -185px;
+    }
+}

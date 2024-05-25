@@ -1,0 +1,418 @@
+body {
+    margin: 0;
+    padding: 0%;
+    background-color: #EDE1D7;
+}
+
+#pantallas{
+    display: flex;
+}
+
+.encabezadoiz {
+    background-color: black;
+    height: 2   ;
+    width: 40%;
+}
+.encabezadodere {
+    background-color: #EDE1D7;
+    height: 200px;
+    width: 60%;
+}
+
+.contenidonav {
+    margin-top: 70px;
+}
+
+
+
+.bodyiz{
+    background-color: #EDE1D7;
+    width: 35%;
+    height: 600px;
+}
+.bodydere{
+    background-color: #EDE1D7;
+    width: 65%;
+    height: 600px;
+}
+
+#bodys {
+    display: flex;
+}
+
+.cuadroiz {
+    border: solid #D96B2B;
+    box-shadow: 0px 0px 20px #D96B2B    ;
+    border-radius: 24px;
+    margin: auto;
+    width: 50%;
+    height: 340px;
+    margin-top: 50px;
+}
+
+.imgrestaurante{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.contenido_datos{
+    border: solid #D6B59A;
+    box-shadow: 0px 0px 20px #D6B59A;
+    width: 90%;
+    height: 690px;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #D6B59A;
+}
+
+.carta{
+    border: solid #D96B2B;
+    box-shadow: 0px 0px 20px #D96B2B    ;
+    border-radius: 24px;
+    width: 30%;
+    height: 550px;
+}
+
+.btnvolver {
+    position: relative;
+    padding: 20px;
+    width: 290px;
+    border-radius: 20px;
+    font-size: 30px;
+    background-color: #D96B2B;
+    border-color: #D96B2B;
+    box-shadow: 0px 0px 2px #dbd9d9;
+    margin-left: 104px;
+    cursor: pointer;
+    margin-top: 0px;
+}
+
+.parteinferior {
+    background-color: #EDE1D7;
+    width: 100%;
+    height: 169px;
+}
+
+.nombreres{
+    border: solid #D9B18F;
+    width: 30%;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: #D9B18F;
+    margin-bottom: 0px;
+    box-shadow: 0px 0px 20px #D9B18F;
+}
+
+.pnombre{
+    color: white;
+    font-size: 25px;    
+}
+
+.rating {
+    margin-top: 2px;
+    position: relative;
+    display: flex;
+    padding: 20px 40px;
+    
+    flex-direction: row-reverse;
+    width: 30%;
+    gap: 30px;
+    border-radius: 20px;
+  
+      margin-left: 220px;
+}   
+
+.rating:nth-child(1){
+    transform: translateX(-80px);
+}
+.rating:nth-child(3){
+    transform: translateX(80px);
+}
+
+.rating input {
+    position: relative;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.rating input::before{
+    content: '\f005';
+    position: absolute;
+    font-family: fontAwesome;
+    font-size: 34px;
+    color: white;
+    transition: .5s;
+}
+
+.rating input:hover ~ input::before, .rating input:hover::before,
+.rating input:checked ~ input::before, 
+.rating input:checked::before {
+    color: yellow;
+}
+
+.nombre {
+    display: flex;
+    width: 80%;
+}
+
+.dato_nombre{
+    color: rgb(12, 12, 12);
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+.input_nombre {
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 8px;
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.dato_telefono{
+    color: black;
+    font-size: 25px;
+    margin-left: 100px;
+}
+
+.input_telefono {
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 8px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: -50px;
+}
+
+.dato_fecha{
+    color: black;
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+.input_fecha {
+    width: 180px;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 8px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.dato_hora{
+    color: black;
+    font-size: 25px;
+    margin-left: 40px;
+}
+
+.input_hora {
+    width: 180px;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 8px;
+    text-align: center;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.dato_cantidad{
+    color: black;
+    font-size: 25px;
+    margin-left: 100px;
+}
+
+.input_cantidad {
+    width: 240px;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 8px;
+    text-align: center ;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.cuadro_informacion {
+    border: none;
+    border-radius: 15px;
+    width: 345px;
+    height: 200px;
+    margin-left: 50px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.pinformacion{
+    position: absolute;
+    font-size: 19px;
+    width: 18%;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: -25px;
+   
+
+}
+
+.containere {
+     border: solid black;
+     padding: 20px;
+     border-radius: 20px;
+}
+
+.h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.btn_reservar1{
+    position: absolute;
+    background-color: #D96B2B;
+    width: 150px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    color: white;
+    margin-left: -250px;
+    margin-top:250px;
+    border-color: #D96B2B;
+    box-shadow: 0px 0px 2px #eaeaea;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+   
+
+
+    body {
+        overflow-x: hidden;
+        
+    }
+    #pantallas {
+        flex-direction: column; 
+        width: 100%;
+    }
+    #bodys {
+        flex-direction: column; 
+        margin-top: 25px;
+        width: 100vh;
+        height: 100%;
+        margin-left: 45px;
+    }
+    .nombreres{
+
+        width: 50%;
+
+    }
+
+    .encabezadoiz  {
+        position: relative;
+        width: 100%; 
+        margin-top: 0px;
+    }
+
+    
+    .encabezadodere{
+       
+        width: 100%; 
+        margin-top: -85px;
+        left: -25px;
+    }
+    .imglogointerior{
+        
+        position: absolute;
+        height: 5px;
+        width: 10px;
+        }
+    
+    .cuadroiz     {
+     width: 100%; 
+    }
+    .contenido_datos{
+        position: relative;
+        width: 60%;
+        height: 925px;
+       
+        
+    }
+    .containere{
+        display: block;
+        height:830px ;
+        padding: 0px;
+        
+    }
+    .nombre{
+       display: block;
+       
+    }
+    .dato_telefono{
+       margin: 35px;
+       margin-top: 0px;
+        
+    }
+    .input_nombre {
+        width: 250px;
+        height: 30px;
+    }
+    .input_telefono{
+        width: 250px;
+        height: 30px;
+        margin-left: 0px;
+    }
+    .dato_nombre{
+        margin-left: 30px;
+    }
+    .dato_cantidad{
+        margin-left: 40px;
+    }
+    .input_cantidad{
+        width: 250px;
+        height: 30px;
+    }
+    .cuadro_informacion{
+        width: 100%;
+        margin-left: 30px;
+    }
+    .input_fecha{
+
+        margin-left: -15px;
+    }
+    .pinformacion{
+        width: 70%;
+        right: 50px;
+        font-size: 17px;
+    }
+    .btnvolver{
+    position: relative;
+    width: 350px;
+    font-size: 100%;
+    top:400px;
+    margin-left: 75px;  
+    color: white;
+    }
+    .btn_reservar1{
+
+        width: 50%;
+        margin-left: 60px;
+        top: 625px;
+    }
+    
+}
+

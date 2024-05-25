@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss/nav.scss">
+    <link rel="stylesheet" href="../css/datos_reserva12.css">
+    <link rel="stylesheet" href="../css/logo16.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DATOS DE RESERVA</title>
+</head>
+<body>
+    <section id="pantallas">
+        <div class="encabezadoiz">
+            <div class="imglogo">
+                <img class="imglogointerior" src="../img/img.svg" alt="">
+           </div>
+        </div>
+
+
+    </section>
+
+    <section id="bodys">
+        <div class="bodyiz">
+            <div class="cuadroiz">
+                <img class="imgrestaurante" src="../img/chill.jpg" alt="">
+            </div>
+
+            <div class="nombreres">
+               <center> <p class="pnombre"><b>La Vara</b></p></center>
+            </div>
+
+            <div class="container">
+                <div class="rating">
+                    <input type="radio" name="circulo1">
+                    <input type="radio" name="circulo1">
+                    <input type="radio" name="circulo1">
+                    <input type="radio" name="circulo1">
+                    <input type="radio" name="circulo1">
+                </div>
+            </div>
+        </div>
+
+        <div class="bodydere">
+            <div class="contenido_datos">
+                <div class="containere">
+                    <div class="nombre">
+                        <form action="../php/reservaschilipipers.php" method="post"> 
+                            <p class="dato_nombre"><b>Nombre y Apellido : </b> <br> <input class="input_nombre" name="nombres" autocomplete="off" type="text"></p>
+                            <p class="dato_telefono"><b>Telefono :</b> <br> <input class="input_telefono" type="text" name="telefono" autocomplete="off" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '');"></p>
+                        </div>
+                        <div class="nombre">
+                            <p class="dato_fecha"><b>Fecha :</b> <br> <input class="input_fecha" type="date" autocomplete="off" name="fecha"></p>
+                            <p class="dato_hora"><b>Hora :</b> <br> <input class="input_hora" type="time" autocomplete="off" name="Hora"></p>
+                            <p class="dato_cantidad"><b>Cantidad de personas :</b> <br> <input class="input_cantidad" type="number" autocomplete="off" name="Cantidadpersonas" oninput="this.value = this.value.replace(/[^0-9]/g, '');"></p>
+                            <a href="reserva_exitosa.html"><button class="btn_reservar1">Reservar</button></a>
+                        </div>
+                    </form>
+                    <div class="nombre">
+                        
+                        <div class="cuadro_informacion">
+                            <h3 class="h3">Informacion</h3>
+                            <p class="pinformacion">Opciones de servicio:  Consumo en el lugar,  Para llevar, Entrega sin contacto, Direccion:  Fusagasuga - silvania 
+                                Horas de atencion:  6:00 am - 10:00 pm
+                                Telefonos: 322-451-7262     310-984-4353
+                                Correo:  chili_peppers@gmail.com</p>
+                        </div>
+    
+                        <div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+    <div class="parteinferior">
+       <a href="chilipeppers.html"> <button class="btnvolver"><b>Volver</b></button></a>
+        
+    </div>
+</body>
+</html>

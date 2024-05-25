@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0%;
+    background-color: #EDE1D7;
+    overflow: hidden;
+    
+}
+
+#pantallas{
+    display: flex;
+}
+
+.encabezadoiz {
+    background-color: #EDE1D7;
+    height: 200px;
+    width: 40%;
+}
+
+
+#pantallainferior{
+    display: flex;
+}
+
+.bodyiz {
+    background-color: #EDE1D7;
+    height: 769px;
+    width: 50%;
+}
+
+
+.bienvenido {
+    color: #D96B2B;
+    margin-top: -40px;
+    font-size: 70px;
+    margin-bottom: 0px;
+    margin-left: 410px;
+    
+}
+
+.puno {
+    margin-top: 5px;
+    font-size: 28px;
+    width: 80%;
+    margin-left: 150px;
+    display: block;
+    text-align: center;
+}
+
+.btn1{
+    background-color: #D96B2B;
+    padding: 20px;
+    font-size: 25px;
+    border-color: #D96B2B;
+    box-shadow: 10px 10px 20px #D96B2B;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.imgh {
+  
+    border-radius: 50px;
+    width: 75%;
+    margin-left: 50px;
+    margin-top: 5px;
+    box-shadow: -5px 5px 5px #040404;
+}
+
+@media (max-width: 1158px) {
+    body{
+        position: relative;
+        overflow: visible;
+        
+    }
+    #pantallas {
+        flex-direction: column;
+         
+    }
+    #pantallainferior{
+        flex-direction: column; 
+    }
+   
+
+    .encabezadoiz, .encabezadodere, .bodyiz, .bodydere {
+        width: 100%; 
+    }
+
+    .bienvenido {
+        display: block;
+        text-align: center;
+        font-size: 45px; 
+        margin-top: 255px;
+        margin-left: 15px;
+        
+    }
+
+    .puno {
+        position: absolute;
+        font-size:19px ;  
+        margin-left: 45px; 
+        margin-top: 40px; 
+        
+        
+    }
+
+    .btn1 {
+        
+        position: absolute;
+        font-size: 20px; 
+        margin-top: 490px;
+        width: 30%;
+        
+        
+        
+    }
+
+    .imgh {
+        
+        position:absolute;
+        top: 150px;
+        width: 100%; 
+        margin-left: 0px;
+        border-radius: 20px;
+        
+       
+    }
+    
+}

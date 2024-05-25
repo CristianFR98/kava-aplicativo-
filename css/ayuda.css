@@ -1,0 +1,155 @@
+body {
+    
+    margin: 0;
+    padding: 0%;
+    background-color: #EDE1D7;
+   overflow: hidden;
+    
+}
+
+#pantallas{
+    display: flex;
+}
+
+.encabezadoiz {
+    background-color: #EDE1D7;
+    height: 200px;
+    width: 40%;
+}
+
+
+#pantallainferior{
+    display: flex;
+}
+
+.bodyiz {
+    background-color: #EDE1D7;
+    height: 769px;
+    width: 50%;
+}
+
+
+.bienvenido {
+    color: #D96B2B;
+    margin-top: -40px;
+    font-size: 70px;
+    margin-bottom: 0px;
+    margin-left: 250px;
+    
+}
+
+.puno {
+    margin-top: 5px;
+    font-size: 28px;
+    width: 80%;
+    margin-left: 150px;
+    display: block;
+    text-align: center;
+}
+
+
+.btn2 {
+    background-color: #f7f6f5;
+    padding: 5px;
+    font-size: 10px;
+    box-shadow: 1px 1px 2px #6e6c6a;
+    border-radius: 15px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+   
+    
+}
+
+
+
+.tren{ 
+ 
+    position: relative;
+    top: -100px;
+    display:flex;
+    width: 44%;
+    height: 500px;
+    padding: 50px;
+}
+
+.tren img{
+    
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .85;
+    transition: 0.5s ease;
+   
+}
+.tren img:hover{
+    cursor:pointer;
+    width: 400px;
+    opacity: 1;
+    filter:contrast(120%);
+
+}
+.tren img.b1{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.tren img.b2{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+@media (max-width: 1158px) {
+    body{
+        position: relative;
+        overflow: visible;
+        
+    }
+    #pantallas {
+        flex-direction: column;
+         
+    }
+    #pantallainferior{
+        flex-direction: column; 
+    }
+   
+
+    .encabezadoiz, .encabezadodere, .bodyiz, .bodydere {
+        width: 100%; 
+    }
+
+    .bienvenido {
+        display: block;
+        text-align: center;
+        font-size: 45px; 
+        margin-top: 255px;
+        margin-left: 15px;
+        
+    }
+
+    .puno {
+        position: absolute;
+        font-size:19px ;  
+        margin-left: 60px; 
+        margin-top: 40px; 
+        
+        
+    }
+
+    .btn1 {
+        
+        position:absolute;
+        font-size: 20px; 
+        width: 40%;
+        margin: 15px 15px;
+        top: 1000px;
+        left:30%;
+    }
+
+    .tren{
+          
+        position:absolute;
+        top: 100px;
+        width: 90%; 
+        height: 250px;
+    }
+  
+}
